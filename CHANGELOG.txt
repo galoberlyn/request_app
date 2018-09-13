@@ -1,0 +1,5 @@
+addrequest.php --> NOT FOR PO label naging Capital Expenditure line 104
+
+supplier table --> unit cost na sya. sa items, lahat ng supplier (3rd column) eh unit cost na pero di parin naiba yung pangalan sa db para di na tayo magpalit ng sobrang daming query. 
+estimate_Cost --> supplier * quantity ng items however, query nalang wag na i code, pwede naman ma generate yun sa excel.
+timefinal --> activity number na ito, wala nang time needed

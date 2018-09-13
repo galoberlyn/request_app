@@ -1,0 +1,17 @@
+function getCheckboxValues(){
+        var chekboxes = document.getElementsByClassName('downloadxls');
+        var reqs = new Array();
+        var reqsJSON;
+
+        for (var i = 0; i < chekboxes.length; i++) {
+            if(chekboxes[i].checked){
+                reqs.push(chekboxes[i].value);
+            }
+        }
+        reqsJSON = JSON.stringify(reqs);
+
+
+
+	window.open("download_xls.php?request_id="+reqsJSON);
+
+}

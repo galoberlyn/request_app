@@ -1,0 +1,20 @@
+function getCheckboxValues(){
+        var chekboxes = document.getElementsByClassName('downloadxls');
+        var reqs = new Array();
+        for (var i = 0; i < chekboxes.length; i++) {
+            if(chekboxes[i].checked){
+                reqs.push(chekboxes[i].value);
+            }
+        }
+        for(var j = 0; j < reqs.length; j++){
+            // xmlhttp.open("GET", "download_xls.php?request_id="+reqs[j], false);
+
+            // xmlhttp.send();
+            // console.log(xmlhttp.readyState);
+            window.open("download_xls.php?request_id="+reqs[j]);
+             // $.get("download_xls.php?request_id="+reqs[j], function(response){
+             // console.log(response); //you might want to see returned response
+             //  });
+        }
+        // alert(reqs);//ito yung mga id at iqquery mo. ito lang papadala mo sa ajax
+    }

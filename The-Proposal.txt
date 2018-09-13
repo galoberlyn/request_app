@@ -1,0 +1,58 @@
+two options
+
+a. Create a table named delivered_items
+the delivered_items table would contain the following:
+- an id(primary key)
+- a foreign key to the requested item
+- the qty delivered
+- the date created
+- the date it was updated 
+
+The Algorithm:
+When a request is made
+insert row in both tables( itemsnotpo and delivered_items )
+the insertion in delivered_items would just be a foriegn key to the requested item so the other column would be NULL at start...
+
+
+Example: 
+nag request ako ng 40 items.. tapos 10 kunyare ang na delivered ngayon ang mangyayare is :
+1. Update the quantity column of the itemsnotpo table, 
+qty column = x - n 
+Where: 
+x is the real quantity or the initial quantity 
+n is the quantity delivered.
+
+2.Update the quantity_delivered column of the delivered_items table
+quantity_delivered = x + n
+Where:
+x is the real quantity or the initial quantity.
+n is the number of items delivered.
+
+3. Check the quantity column of the itemsnotpo table,
+if(qty == 0) then change the status to Completed
+
+4. Then make changes in the View Details UI( we would be using AJAX/JQuery to dynamically change the contents of the tables in the UI).
+
+5. For the case of Canceled items.... 
+	Cancel Case A:
+			When an item was partially delivered can it be canceled?
+		if so then nothing would be change on the cancel button
+		but if yes
+		then:
+		the 5th step would be to disable the cancel button on the UI part of the application.
+
+
+
+
+
+
+
+b. One table, with 2 columns( quantity_delivered and quantity_not_delivered)
+
+Same algo but the thing is one update 
+1. Update the quantity_delivered column of the itemsnotpo table
+2. Update the Quantity_not_delivered column of the itemsnotpo table
+3. Check the quantity_not_delivered column of the itemsnotpo table
+if(qty == 0) then change the status to Completed
+4. Then make changes in the View Details UI( we would be using AJAX/JQuery to dynamically change the contents of the tables in the UI).
+5. same as a. solution

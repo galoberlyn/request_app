@@ -1,0 +1,20 @@
+Added a new database for storing of delivered items
+Added "add delivery" UI to the view_details.php
+asap/ASAP can now be accepted as input in date field on addrequest.php
+Delivered Items UI on view_details.php data is mow present
+modified the database table delivered_items
+
+All functions are now up and running in the buttons of Deliver All items/Cancel all items in view_details.php such as
+if canceled, all items and the req slip will be canceled
+if completed, all items and the req slip will be completed
+Inupdate mga error sa database so import muna ulit bago, anjan sa zip file.
+
+
+v2 7/20/2017
+Deliver all items and cancel all items working in a case that all items status and request slip will now be changed to delivered/canceled
+Add button is now working.
+
+Missing
+Full deliver button/cancel item button
+excel handling
+edit handling

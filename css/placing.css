@@ -1,0 +1,64 @@
+body{
+    background-color: #33CCCC;
+}
+
+legend{
+    color:black;
+}
+
+.placing{
+    margin-left:33%;
+    margin-top:7%;
+     color:black;
+}
+.col-lg-2, .control-label{
+    padding-left: 0px;
+     color:black;
+   
+}
+
+.col-lg-10{
+    color:black;
+      width: 60%;
+ 
+}
+.form-group input{
+    color: black;
+    background-color: #D3D3D3;
+    margin-right: 5%;
+}
+
+/*
+.col-lg-10, .col-lg-offset-2{
+    padding-left: 10%;
+}
+*/
+.form-group label{
+   width: 40%;
+}
+.login-input{
+    margin-right: 15%;
+}
+#login-center{
+    text-align: center;
+}
+.button-vertical{
+    margin-top: 8%;
+    margin-left: 10%;
+}
+#createAcc{
+    text-align: center;
+    font-size: 15px;
+}
+.clearbtn{
+    float: left;
+    padding-right: 10%;
+}
+#spacer{
+    float: right;
+}
+#logout-size{
+    font-size: 10px;
+}
+
+
